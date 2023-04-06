@@ -63,8 +63,8 @@ var odenados = amigos.sort();
 document.write(odenados);*/
 
 
-var nombre ="Arturo",
-    edad = 20;  
+/*var nombre ="Arturo",
+    edad = 20;*/  
 //¡CONDICIONALES!
 /*if(nombre == "Carlos"){
     document.write("Bienvenido " +nombre);
@@ -82,12 +82,49 @@ var nombre ="Arturo",
     document.write("Eres menor de edad ");
 }*/
 
-//CONDICION CON FUNCION TRUE O FALSE === significa que se compara unacadenad detexto con un dato entero
-if(edad==="18"){
+//CONDICION CON FUNCION TRUE O FALSE === significa que se compara una cadenad detexto con un dato entero
+/*if(edad==="18"){
     document.write("ok");
 }else{
     document.write("flase");
+}*/
+
+//Ciclo for en javascript
+/*var numerousuarios=50
+var dias =["lunes","martes","miercoles","jueves","viernes","sabado","domingo"];
+
+for(i=0; i<= dias.length -1; i++){
+    document.write("numero : " +dias[i] +"</br>")
 }
+var i = 0;
+var numeridias = dias.length -1;
+while(i <= numeridias){
+    document.write("El numero es: " +dias[i] +"</br>")
+    i++;
+}*/
 
+//funcion
+/*function saludo(nombre){
+    document.write("ten un gran dia " + nombre);
+}
+saludo("Brayan");*/
+/*function suma(numer1, numero2){
+    var numer1= numer1;
+    var numero2=numero2
+    var resultado=numer1+numero2
+    //document.write("la suma es: " + resultado )
+    //el document.wirte lo reemplazmos por un return 
+    return resultado;
+}
+document.write("La suma es: "+suma(3,10) +"</br>");
 
+document.write("La suma es: "+suma(5,40));*/
+
+function numeroM(n1,n2){
+    if(n1 > n2){
+        return n1;
+    }else{
+        return n2; }
+}
+document.write("El número Maximo es: "+numeroM(30,9));
 
