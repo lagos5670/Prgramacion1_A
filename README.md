@@ -1,2 +1,2 @@
 # individual
-A prendiendo un poco de frontend 
+A prendiendo un poco de javascript
