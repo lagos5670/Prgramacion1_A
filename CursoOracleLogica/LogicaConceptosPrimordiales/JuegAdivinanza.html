@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinanza</title>
+</head>
+<body>
+    <h1>Bienvenido</h1>
+    <p>El juego consisten en adivinar el numero que por defecto existe en la maquina</p>
+    <script>
+        function saltarLinea(){
+            document.write("<br>");
+            document.write("<hr>");
+        }
+        function imprimir(dato){
+            document.write(dato);
+            saltarLinea();
+        }
+        //Math.round nos ayuda al redondeo de numeros
+        //Math.random nos da numero aleatorios
+        var numeropensado = Math.round(Math.random()*10)  
+        var intentos = 3;
+        var contador = 1;
+
+        while(contador <= intentos){
+
+            var numeroLanzado = parseInt(prompt("Ingrese un numero entre 0-10"));
+
+            if(numeropensado == numeroLanzado){
+
+                alert("Has Adivinado el número" +contador +" El numero Pensado era: " +numeropensado)
+                //break sirve para cortar cadenas siempre y cuando se cumpla la condición 
+                break;
+
+
+            }else{
+
+                alert("Suerte para la proxima sigue Intentadno");
+              
+
+            }
+            contador++;
+
+           
+        }
+
+        if(numeropensado == numeroLanzado){
+
+            imprimir("Has Adivinado el número" +intentos +" El numero Pensado era: " +numeropensado);
+
+        }else{
+
+            imprimir("Suerte para la proxima el numero pensado era: " +numeropensado);
+
+
+        }
+        imprimir("Fin ");
+       
+     
+
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

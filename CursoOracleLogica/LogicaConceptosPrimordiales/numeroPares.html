@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pares</title>
+</head>
+<body>
+    <h1>Numero par del 1 a 100</h1>
+    <script>
+        function saltarLinea(){
+            document.write("<br>");
+        }
+        function imprimir(dato){
+            document.write(dato);
+            saltarLinea();
+        }
+         
+        var numepar = 2;
+
+        while(numepar <= 100){
+
+            imprimir("El numero es: " + numepar);
+            numepar = numepar + 2;
+
+        } 
+
+        imprimir("Fin");
+
+    </script>
+</body>
+</html>

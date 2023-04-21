@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio</title>
+</head>
+<body>
+    <h1>Promedio de Edad de una Familia</h1>
+    <script>
+        function saltarLinea(){
+            document.write("<br>" +"<br>");
+        }
+        function imprimir(dato){
+            document.write(dato);
+            saltarLinea();
+        }
+        var numMienb = parseInt(prompt("Ingresar la cantidad e familia"));
+        var contador = 1;
+        var totalEdades = 0;
+        var edad;
+        var mediaEdad;
+        while(contador <=numMienb){
+           
+            edad = parseInt(prompt("Ingrese la edad del familiar"));
+            totalEdades = totalEdades+edad; 
+            contador++;
+
+        }
+        mediaEdad = totalEdades/numMienb;
+        imprimir("Total Edades " + totalEdades +" y la media es : " +mediaEdad);
+        imprimir("FIN");
+        
+        var resultado = edadP+edadM+edadH+edadHi;
+        var promedio = resultado/4;
+        imprimir("El Promedio de la Familia es: " +promedio)
+       
+
+
+    </script>
+</body>
+</html>

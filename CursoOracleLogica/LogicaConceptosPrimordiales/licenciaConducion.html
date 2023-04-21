@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licencia</title>
+</head>
+<body>
+    <H1> Bienvenido </H1>
+    <p> Este programa ayuda a visulizar si puedes conducir o no cumpliendo algunos requerimientos</p>
+    
+    <script>
+        function saltarLinea(){
+            document.write("<br>");
+            document,write("<hr>");
+        }
+        function imprimir(dato){
+            document.write(dato);
+            saltarLinea();
+        }
+        var edad = parseInt(prompt("Ingresa tu edad"));
+        var licencia = prompt("Tienes licencia de cindución S o N ");
+
+    if(edad >= 18 && licencia == "S"){
+        imprimir("Puedes conducir")
+    }else {
+        imprimir("No puedes conducir")
+    }
+
+    </script>
+</body>
+</html>

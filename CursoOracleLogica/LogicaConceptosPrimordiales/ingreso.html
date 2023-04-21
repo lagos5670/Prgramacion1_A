@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title>
+</head>
+<body>
+    <h1>Bienvenido</h1>
+    <script>
+        function saltarLinea(){
+            document.write("<br>");
+            document.write("<hr>");
+        }
+        function imprimir(dato){
+            document.write(dato);
+            saltarLinea();
+        }
+       
+        var inicioDeSesionRegistrado = "alura";
+        var contrasenhaRegistrada = "alura321";
+        var contador = 1;
+        var intentos = 3;
+
+
+        while(contador<=intentos){
+
+            var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+            var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+            if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+                alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+                break;
+            } else {
+                alert("inicio de sesión inválido. Favor intente de nuevo");
+            }
+            contador++;
+        }
+        saltarLinea();
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+                imprimir("Bienvenido al sistema " + inicioDeSesionIngresado);
+                
+            } else {
+                imprimir("inicio de sesión inválido. Favor intente de nuevo");
+            }
+     
+
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

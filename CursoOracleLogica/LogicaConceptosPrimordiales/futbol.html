@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbol</title>
+</head>
+<body>
+    <h1>Bienvenido Calcularemos los puntos de un equipo de futbol</h1>
+    <script>
+        function saltarlinea(){
+            document.write("<br>");
+            document.write("<hr>");
+        }
+        function imprimir(dato){
+            document.write(dato);
+            saltarlinea();
+        }
+        //parseInt convierte texto a numero
+        var ganar = parseInt(prompt("Informe la cantida de victorias"));
+        var empate = parseInt(prompt("Informe la cantidad de empates"));
+        var perder = parseInt(prompt("Informacion de cuantos partidos perdidos"));
+        var puntosTotales = (ganar*3)+empate;
+
+        imprimir("Total de puntos ganados del equipo es: " + puntosTotales  +"Total de Partidos perdidos son: " +perder);
+
+        if(ganar>perder){
+            imprimir("El equipo esta mejor que el año pasado");
+        }else if(ganar<perder){
+            imprimir("El equipo esta peor  que el año pasado");
+        } else if(ganar == empate){
+            imprimir("El equipo esta Igual que el año pasado");
+        }
+    </script>
+    
+</body>
+</html>

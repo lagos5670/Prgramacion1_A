@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loteria</title>
+</head>
+<body>
+    <H1> Bienvenido </H1>
+    <p> Este programa ayuda a visulizar si gano la loteria</p>
+    
+    <script>
+        function saltarLinea(){
+            document.write("<br>");
+            document,write("<hr>");
+        }
+        function imprimir(dato){
+            document.write(dato);
+            saltarLinea();
+        }
+        function loteria(numero){
+            var n = Math.round(Math.random()*numero);
+            return n;
+        }
+        var n1 = parseInt(prompt("Ingrese el numero limite para dar numero aleatorios"));
+        var numeroLoteria = loteria(n1);
+        var numeroAdivinar= parseInt(prompt("Adivine el numero"));
+
+    if(numeroLoteria == numeroAdivinar){
+        imprimir("¡¡USTED SE A GANDO LA LOTERIA FELICIDAES!! ")
+    }else {
+        imprimir("NO A SERTO, EL NUMERO GANDOR ERA: " +numeroLoteria);
+    }
+
+    </script>
+</body>
+</html>

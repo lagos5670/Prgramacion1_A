@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+   
+    <h1> Indice de Masa Corporal </h1>
+    Quieres saber que es IMC
+    <A href="https://es.wikipedia.org/wiki/%C3%8Dndice_de_masa_corporal">Enta aquí</A>
+    
+    <script>
+        //esta funcion nos permite hacer saltos de liena
+       function saltarLinea(){
+        document.write("<br>");
+        document.write("<hr>");
+       }
+       //esta funcion nos permite imprimir los datos 
+       //obtenidos con saltos de linea incluidos 
+       function imprimir(dato){
+        saltarLinea();
+        document.write(dato);
+        saltarLinea();
+       }
+       //Esta funcion Permite nos permite calcular y visualizar la informacion
+       function calcularIMC(peso, altura){
+            var imc= peso/(altura*altura);
+            return imc;
+       }
+        //esta funcion permite ingresar los parametros
+        /*var dato1=calcularIMC(47.8,1.60)
+        //stefania
+        var dato2=calcularIMC(76,1.64);*/
+        var nombre = prompt("Ingresa su Nombre completo");
+        var peso = prompt(nombre +", Igrese su peso");
+        var altura = prompt(nombre +", Ingrese su altura");
+        var resultado = calcularIMC(peso,altura)
+        imprimir("El IMC calculado de " +nombre +"es: " +resultado);
+       if(resultado <=18.5){
+            imprimir(nombre +"SU PESO ES BAJO ");
+       }else if(resultado > 18.5 && resultado <= 24.9){
+            imprimir("SU PESO ES EL  ADECUADO");
+       }else if(resultado > 25.0 && resultado <= 29.9){
+            imprimir(nombre +"USTED TIENE SOBRE PESO ")
+       }else if(resultado > 30.0 && resultado <= 34.9){
+            imprimir(nombre + "USTED TIENE OBESIDAD GRADO 1")
+       }else if(resultado > 35.0 && resultado <= 39.9){
+            imprimir(nombre + "USTED TIENE OBESIDAD GRADO 2")
+       }else if(resultado > 40){
+            imprimir(nombre + "USTED TIENE OBESIDAD GRADO 2")
+       }
+
+
+
+
+    </script>
+</body>
+</html>

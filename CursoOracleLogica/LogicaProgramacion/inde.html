@@ -18,50 +18,79 @@
     <br>
     <br>
     <script>
-        document.write("El Promedio de juan, pedro y carlos es: ");
-        document.write((20+25+15)/3 +"<br>");
+      
+        /*Funciones Reutilizar codigo Funcion_salto de linea*/
+        function saltolinea(){
+            document.write("<br>");
+            document.write("<hr>");
+        }
+        //esta funcion no sirve como si usaramos con documento.wirte
+        //con la diferencia que tien saltos de linea incluidos qeu nos ayaudar a ser ma recursivos
+        function impimir(frase){
+            document.write("<big>" +frase +"</big>");
+            saltolinea();
+        }
+        impimir("<h1>Sean Bienvenidos</h1>");
+        //codigo calcula el promedio de edad 
+        document.write("El Promedio de juan, pedro y carlos es:");
+        impimir((20+25+15)/3);
+        //este codigo suma las edades 
         document.write("La suma de juan, pedro y carlos es: ");
-        document.write((20+25+15) +"<br>");
-
+        document.write((20+25+15));
+        saltolinea();
         var anho =2025;
+        //este codigo muestra la edad que tienes 
         document.write("Juan tiene: ");
-        document.write(anho-2003 +"<br>");
+        document.write(anho-2003);
+        saltolinea();
         document.write("Pedro tiene : ");
-        document.write(anho-1998 +"<br>");
+        document.write(anho-1998 );
+        saltolinea();
         document.write("Carlos tiene: ");
-        document.write(anho-2008 +"<br>");
+        document.write(anho-2008);
+        saltolinea();
 
         anho = 2020;
-        
+        //este codigo muesra el años de nacimiento 
         document.write("El año de nacimiento de juan: ");
-        document.write(anho-20 +"<br>");
+        document.write(anho-20);
+        saltolinea();
         document.write("El año de nacimiento de pedro: ");
-        document.write(anho-25 +"<br>");
+        document.write(anho-25);
+        saltolinea();
         document.write("El año de nacimiento de carlos: ");
-        document.write(anho-15 +"<br>");
+        document.write(anho-15);
+        saltolinea();
 
         document.write("<h1> Chicas </h1>");
-        document.write("Años que tiene las chicas :" +"<br>");
+        document.write("Años que tiene las chicas :");
+        saltolinea();
         anho =2023;
         document.write("Jimena tiene: ");
-        document.write(anho-2010 +"<br>");
+        document.write(anho-2010 );
+        saltolinea();
         document.write("Carla tiene : ");
-        document.write(anho-1998 +"<br>");
+        document.write(anho-1998);
+        saltolinea();
         document.write("Stefania tiene: ");
-        document.write(anho-2003 +"<br>");
+        document.write(anho-2003);
+        saltolinea();
         var edadJimena=13;
         var edaddCarla=25;
         var edadStefania=20;
+
         var nombre1="Jimena";
         var nombre2 ="Carla";
         var nombre3="Stefania";
+
         var Promedio = (edadJimena+edaddCarla+edadStefania)/3;
         // Esta funcion Math.round nos permite redondear promedios
-        document.write("El Promedio de las edades de : " +nombre1 +", " +nombre2 +" y " +nombre3 +" " +"es :" +Math.round(Promedio) +"<br>");
-
+        document.write("El Promedio de las edades de : " +nombre1 +", " +nombre2 +" y " +nombre3 +" " +"es :" +Math.round(Promedio));
+        saltolinea();
         
 
-        document.write("<h1>Sea bienvenido</h1>");
+
+        
 
     </script>
 </body>

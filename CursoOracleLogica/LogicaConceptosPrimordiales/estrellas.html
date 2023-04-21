@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrellas</title>
+</head>
+<body>
+    <h1>Bienvenido</h1>
+    <script>
+        function saltarLinea(){
+            document.write("<br>");
+            document.write("<hr>");
+        }
+        function imprimir(dato){
+            document.write(dato);
+            saltarLinea();
+        }
+        //este for nos sirve para las filas
+        for(var lienas = 1; lienas<=3; lienas++){
+           //for nos sirve para las columnas 
+            for(var columnas = 1; columnas<=10; columnas++){
+                document.write("*");
+            }
+            saltarLinea();
+        }
+        imprimir("FIN");
+       
+     
+
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

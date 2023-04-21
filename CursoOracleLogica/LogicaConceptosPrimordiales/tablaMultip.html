@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+</head>
+<body>
+    <h1>Tabla de Multiplicar</h1>
+    <script>
+        function saltarLinea(){
+            document.write("<br>" +"<br>");
+        }
+        function imprimir(dato){
+            document.write(dato);
+            saltarLinea();
+        }
+        var multiplicador = 1;
+        var numero = 5;
+        
+        imprimir("While");
+
+        while(multiplicador<=10){
+            var resultado = numero*multiplicador;
+
+            //imprimir("El resultado de "+ numero +" y el " +multiplicador +" es :" +resultado);
+            document.write("El resultado de "+ numero +" y el " +multiplicador +" es :" +resultado +"<br>");
+            multiplicador++;
+
+        }   
+        imprimir("Fin del Proceso");
+
+        imprimir("For");
+        for(var multimpcador = 1; multimpcador<=10; multimpcador++){
+            
+            imprimir(5*multimpcador);
+
+        }
+
+
+    </script>
+</body>
+</html>

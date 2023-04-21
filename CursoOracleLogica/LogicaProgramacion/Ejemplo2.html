@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferencia Edad</title>
+</head>
+<body>
+    <h1>Cálculo diferencia de edades</h1>
+    <script>
+        //esta funcion nos permite tener un salto de linea 
+        // la etiqueta >hr> nos sirve para separar resultados
+        function saltoLinea(){
+            document.write("<br>");
+            document.write("<hr>");
+        }
+        //esta funcion nos permite imprimr los datos y tner saltos de liena
+        //la etiqueta <big></big> nos ayudar que la fuente de letra sea mas grande
+        function impimir(dato){
+            document.write("<big>" +dato +"</big>");
+            saltoLinea();
+
+        }
+        var edadmenor = 19;
+        var edadmayor=21;
+        var resultado= edadmayor-edadmenor;
+        impimir("Edad Hermano Mayor: " +edadmayor +" años ");
+        impimir("Edad Hermano Menor: " +edadmenor +" años ");
+        impimir("Nuestra diferencia de edad es: "+resultado +" años ")
+
+    </Script>
+</body>
+</html>

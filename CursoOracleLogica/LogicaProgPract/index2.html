@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaforo</title>
+</head>
+<body>
+    <h1>Bienvenidos <a href="https://developer.mozilla.org/en-US/docs/web/api/canvasrenderingcontext2d">Ingresa Aquí</a></h1>
+    <!--La tag de canvas le vamos a definir un largo y un cancho-->
+    <canvas width="600" height="400"></canvas>
+    <script>
+        function dibujarCuadrado(x,y,color){
+            //querySelector es un conector de tags de html
+            var pantalla = document.querySelector("canvas");
+            //getContext traera todo el contenido de la pantalla 
+            var pincel = pantalla.getContext("2d");
+            //propiedad 
+            pincel.fillStyle =color;
+            pincel.fillRect(x,y,50,50);
+            pincel.strokeStyle = "black";  //Definimos un borde
+            pincel.strokeRect(x,y,50,50);
+        }
+        /*var contador = 0;
+        while(contador < 600){
+
+            //horizontal ROJO
+            dibujarCuadrado(contador,0,"red");
+            //vertical AMARILLO
+            dibujarCuadrado(contador,50,"yellow");
+            dibujarCuadrado(contador,100,"green");
+            contador = contador +50;
+        }*/
+        for(var contador=0; contador<600; contador = contador +50){
+            //horizontal ROJO
+            dibujarCuadrado(contador,0,"red");
+            //vertical AMARILLO
+            dibujarCuadrado(contador,50,"yellow");
+            dibujarCuadrado(contador,100,"green");
+
+        }
+
+    
+
+        
+    </script>
+</body>
+</html>
