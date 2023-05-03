@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa 3</title>
+</head>
+<body>
+
+    <canvas width="600" height="400"></canvas>
+
+    <script>
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+    
+        pincel.fillStyle="grey";
+        pincel.fillRect(0,0,600,400);
+        var colores =["blue","red","green"];
+        var indiceColorActual = 0;
+
+        function dibujaCirculo(evento){
+            var x = evento.pageX - pantalla.offsetLeft;
+            var y = event.pageY - pantalla.offsetLeft;
+            pincel.fillStyle = colores[indiceColorActual];
+            pincel.beginPath();
+            pincel.arc(x,y,10,0,2*3.14);
+            pincel.fill();
+            
+            console.log(x +"," +y);
+           
+        }
+        //pantalla.onclick = exihibeAlerta;
+        pantalla.onclick = dibujaCirculo;
+
+
+        function alterarColor() {
+            //cuanado hacemos clic derecho incrementa y se ira al siguinet evalor de aray 
+           indiceColorActual++
+           //este if no ayuda con la condicion de que pasa si el indicecloloractual es mayor o igual al colores.length
+           //entonce le decimos que regrese al color predefinido que seria el azul
+           if(indiceColorActual>=colores.length){
+                indiceColorActual = 0;
+            }
+            return indiceColorActual;
+        }
+        pantalla.oncontextmenu = alterarColor;
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!--es utilizada para indicar al navegador el tipo de documento que va a ejecutar -->
+<html lang="en"> <!--etiqueta html es todo lo que va a tener es todo el contenido de la pagina web, el atributo lang nos ayuda a espesificar el idioma en que esta escrito el contido de la pagina web -->
+
+<!--la tag head es una etiqueta que separa las       etiquetas informativas-->
+<head>  
+    <!--meta es un tg informativo-->
+    <meta charset="UTF-8"> <!--define el diccionario de palabras-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barberia</title>
+    <!--VAMOS A IMPLEMENTAR UNA ETIQUETA DE CONTENIDO y buscamos a todo los styles de css definimos la propieda de relacion rel y ponemos la direccion del archivo-->
+    <link rel="stylesheet" href="style.CSS">
+
+</head>
+<!-- la tag body se definene las etiquetas de contenido-->
+<body>
+    <!--esta etique hace referencia a nuestro encabezado-->
+    <header>
+       <h1 class="titulo-principal">Bienvenidos a la barberia</h1>
+    </header>
+    <img id="banner" src="../imegenes/banner.jpg">
+    <!--vamos a dividr nuestro contenido-->
+    <div class="principal">
+
+        <h2 class="titulo-centralizado"> Sobre la Barberia </h2>
+        <!--Para indicar parrafos
+        la etiqueta strong no ayuda poner en negrita las plabras importantes, la etiquete em nos ayuda a dar enfasis en texto-->
+        <p>Ubicada en el corazon de la ciudad, la <strong>Barberia de Alura</strong> trae para le mercado lo qeu hay de mejor para su cabello y barba Fundad en 2020, la  Barberia Alura ya es ya es destaque en la ciudad y conquista nuevos clientes diariamente </p>
+
+        <p id="mision"><em> Nuestra misión es:<strong>"Propercionar autoestima y calidad de vida a nuestros clientes"</strong></em></p>
+
+        <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimientos en el mundo de la moda, para asi ofrecer a nuetros clientes las ultimas tendencias. El atendimento posee un patrón de exelencia y agilidad, grantizando calidad y satisfación de nuetros clientes. </p>
+
+    </div>
+
+    <div class="diferenciales">
+
+        <h3  class="titulo-centralizado">Diferenciales</h3>
+
+        <!--vamos a listar con una tag ul(lista no ordenada) o ol(lista ordenada)-->
+        <!--tag de contenido-->
+        <ul>
+            <!--tag li representa un item de una lista  -->
+            <li class="items">Atencion Personalizado a los clientes </li>
+            <li class="items">Espacio Diferenciado</li>  
+            <li class="items">Localización </li>
+            <li class="items">Profecionales Calificados</li>
+        </ul>
+        <img class="imgDiferencial" src="../imegenes/diferenciales.jpg">
+
+    </div>
+   
+    
+
+    
+</body>
+</html>
+
+
+
+

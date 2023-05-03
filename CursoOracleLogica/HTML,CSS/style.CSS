@@ -1,0 +1,77 @@
+/*tenemos que respetar al monento de estlizar la pagina el sintaxis de html */
+/*difnimos un propiedad espesficica a la propiedad p(<p>) h1(<h1>)*/
+body{
+    background-color: rgb(189, 203, 224);
+}
+.titulo-principal{
+    font-size: 40px;
+    padding-left: 30px;
+}
+/* tag h1 se usa para usar titulos Style donde como propiedad font-size paradarle el tamaño de la fuente 
+ya tambien vamos a usar la pripiedad d text-align: center para centar el texto*/
+#banner{
+    /*Cómo ajustar la anchura del elemento, a través de la propiedad*/
+    width: 100%;
+    /*Cómo ajustar la altura del elemento, a través de la propiedad*/
+    /*height: 450px;*/
+}
+.principal{
+    background-color: #cccccc;
+     /*Cómo ajustar el margen interno del elemento, a través de la propiedad*/
+    /*el espaciamineto interno fue aunmetado */
+    padding: 20px;
+}
+.titulo-centralizado{
+    font-size: 30px;
+    text-align: center; 
+    /*anchura
+    height: 50px;*/
+    /*la anchura que tendara el borde */
+    /*border: 10px solid #000000*/;
+    /*Cómo ajustar el margen extern del elemento, a través de la propiedad */
+    /*margin: 40px;*/
+}
+/*CSS cascading tyle Sheets la usamos utilizando la palabra reservada Style donde como parametro en en este caso vamos a usarlo para agrandar la letra con la propiedad fon-size y la agregamos a 20px*/ 
+p{
+    font-size: 15px;
+}
+/*creamos un selector de mision <p id="mision">*/
+#mision{
+    font-size: 20px;
+    text-align: center;
+}
+/*queremos darle color  ala parte de enfasis lo que hacemos es direccionar espesificamente la paorte donde queremos poner dicho solor*/
+em strong{
+    color: red;
+    
+}
+.diferenciales{
+    background-color:#ffffff;
+    padding: 30px;
+}
+
+ul{
+    /*solo ocupe el espacio de contenido */
+   display: inline-block;
+   /*vamos a linaer la lista con la imagen diciendole que liste al inico de la margen */
+   vertical-align: top;
+   /*vamos a dar una nchura*/
+   width: 20%;
+   /*el espaciamineto interno fue aunmetado */
+   padding: 20px;
+   /*modicficamos la margen del extremo derecho*/
+   margin-right: 15%;
+}
+.imgDiferencial{
+    
+    width: 50%;
+    /*el espaciamineto interno fue aunmetado */
+    padding: 20px;
+
+}
+/*vamos a referencias la clase items vamos a usar un . y el nombre de la clase*/
+/*le vamos a poner el la letras en italico para destacar el contenido*/
+.items{
+    font-style: italic;
+}
+
