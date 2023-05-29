@@ -1,0 +1,113 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: #BBBBBB;
+}
+.caja{
+    width: 940px;
+    padding: 20px 0;
+    /**/
+    position: relative;
+    /*border: 20px solid #000000;*/
+    margin: 0 auto;
+}
+nav{
+    /*esto me permite mover lo que tengo dentro de la tag nav  yo puedo posicionar mi elemento en cualquier lugar de la página*/
+    position: absolute; 
+    top: 130px;
+    right:0;
+}
+nav li{
+    /*cambiamos el tamaño de contenido*/
+    display: inline;
+    /*conla etiqueta margin vamos aponerle espacio derecha, arriba, abajo y zquierda */
+    margin: 0 0 0 25px;
+}
+nav a {
+    /*Nos sirve para alterar laaletras de minusculas a mayusculas*/
+    text-transform: uppercase;
+    color: #000000;
+    /*Alteramos el color de las letras a negro*/
+    font-weight: bold;
+    font-size: 20px;
+    /*Vamos a retirar ese subrayado de las etique a herf */
+    text-decoration: none;
+}
+nav a:hover{
+    /*vamos a acapturar eventos del susuario con el hover que  catura el movimenito del mause*/
+    color: #c78c19;
+    /*vAMOS A DEVOLVER EL SUBRAYADO CON LA PALABRA UNDERLINE*/
+    text-decoration: underline;
+
+}
+.promo{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.promo li{
+    /*Pudiendo ajustar el tamaño de su contenido, dejándolo regulable.*/
+    display: inline-block;
+    text-align: center;
+    /*vamos a distribuirle el 30% a cada targeta */
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;/*espacio externo*/
+    padding: 30px 20px;/*30px vertical 20px horizontal*/
+    box-sizing: border-box;/*nos ayuda a no psarnos del limite de 940
+    ese padding se ira y contablilizara lo del 30% definido */
+    
+    /*Ahorramos esta tres lineas de codigo
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid ;*/
+    border: 2px solid #000000;
+    /*
+    ESTO NOS SIRVE PARA HACER LAS PUNTAS DE LOS CUADROS REDONDEADOS AL GUSTO QUE QUERAMOS 
+    border-top-left-radius:10px;
+    border-top-right-radius: 20px ;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius:60px ;*/
+    border-radius: 10px;
+}
+
+.promo li:hover{
+    /*HOVER: Cuando queremos resaltar alguna característica en el momento en que el mouse del usuario esté por encima del elemento.*/
+    border-color: #57bfd1;    
+}
+.promo li:active{
+    /*vamos a acapturar eventos del susuario con el active catura el clik de mouse*/
+    border-color: rgb(72, 255, 0);
+}
+.promo h2{
+    font-size: 30px;
+    /*esta tag no ayuda a ponerle nregita anuestro texto*/
+    font-weight: bold; 
+    
+}
+.promo li:hover h2{
+    /*vamos a aumentar de tamaño a letra con el movimeinto del mause espesificando directaemnete el tag*/
+    font-size: 33px;  
+}
+.producto-descripcion{
+    font-size: 18px;
+}
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    /*damos espacio*/
+    margin-top: 10px;
+
+}
+footer{
+    /*agregamos una imagen*/
+    background:url(../../imegenes/bg.jpg);
+    padding: 40px;
+    text-align: center;
+}
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css/reset.css"></a>
+    <title>Barberia/Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <H1><img src="../../imegenes/logo.png" alt="logo de la Barberia "></H1>
+            <!--no srive pra poner datos de navegacion-->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <!--for no ayuda a referenciar la ide del input-->
+            <label for="nombreapellido">Nombre y Apellido</label>
+            </label><input type="text" id="nombreapellido" class="input-padron" required>
+            
+            <label for="correoelectronico">Correo Electronico</label>
+            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(xx) xxxx xxxx">
+
+            <label form="mensaje">Mensaje</label>
+            <textarea cols="69" rows="5" id="mensaje" class="input-padron" required></textarea><!--cremaos un tex area-->
+            <!--fieldset agurpa items que pertenece a un mismo grupo-->
+            <fieldset>
+                <legend>¿Como le gustaría que lo contactemos ?</legend>
+
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">E-mail</label><!--para la tag de raio es necesario porner un value-->
+                
+                
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
+               
+
+                <label for="radio-WhatsApp"><input type="radio" name="contacto" value="WhatsApp" id="radio-WhatsApp" checked>WhatsApp</label>
+                
+            </fieldset>
+
+            <fieldset>
+                <!--Generemos un combo box-->
+                <legend>¿En que horario prefiere ser atendido?</legend>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+            <label class="checkbox"><input type="checkbox" checked>¿Le gustaría resivir novedades de la Barberia</label>
+            <input type="submit" value="Enviar Formulario" class="enviar">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08 ~ 20h</td>
+                </tr>
+            
+                <tr>
+                    <td>Miercoles</td>
+                    <td>08 ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08 ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <img src="../../imegenes/logo-blanco.png" alt="logo de la Barberia ">
+        <p class="copyright">&copy Copyright Barberia Alura - 2023</p>
+    </footer>
+
+</body>
+</html>
