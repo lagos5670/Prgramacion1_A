@@ -1,0 +1,110 @@
+/*Trabajando con Flexbox
+
+Es una herramienta de CSS que sirve para posicionar los elementos dentro de un contenedor libremente y casi sin restricciones en función del espacio disponible.*/
+
+/*HEADER*/
+.headerPrincipal .container{
+    display:flex;/*Las cajas toman forma celdas como si fuerna una tabla esto nos permite que sea predecible y adaptable*/
+    align-items: center;/*Elementos queden alineados en el medio */
+    justify-content: space-between;/*espacio entre los elementos*/
+}
+.headerPrincipal-nav{
+    display: flex;
+}
+
+/*MAIN*/
+.contenidoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenidoPrincipal-cursos-link{
+    display: flex;
+    width: 23%;
+}
+
+
+/*FOOTER*/
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;/*espacio al rededor de los items*/
+    width: 70%;
+    margin-right: 5%;
+}
+.rodapePrincipal-contatoForm{
+    width:25%;
+}
+.rodapePrincipal-contatoForm-fieldset{
+    display:flex;
+}
+.rodapePrincipal-navMap-list{
+    display: flex;
+    flex-direction: column;/*vamos indicar que los elementos van a estar ubicados en columnas*/
+    height: 260px;
+    flex-wrap: wrap;/*por cada 250px esta funcion lo que hace es que una ves cumplida el rango cebrara el texto y lo posicionara a lado derecho del la pagina */
+}
+.videoSobre .container{
+    display: flex;
+}
+.videoSobre-sobre{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.videoSobre-video{
+    flex-grow: 2;/*toma el espacio sobrante y lo divide entre el espacio del elemento*/
+    flex-shrink: 2;
+}
+.videoSobre-sobre-list{
+    flex-grow: 2;
+    
+}
+
+/*flexbox responsivo para celulares*/
+
+@media  screen and (max-width:768px) {
+    .headerPrincipal .container{
+        flex-direction: column;  
+        align-items:initial;
+        text-align: center;
+    }
+    .headerPrincipal-nav{
+        flex-direction: column;
+        
+    }
+    .contenidoPrincipal-cursos{
+        flex-direction: column;
+    }
+    .contenidoPrincipal-cursos-link{
+        width: 100%;
+    }
+    .videoSobre .container{
+        flex-direction:column ;
+    }
+    .rodapePrincipal-navMap-list{
+        height: auto;
+        flex-wrap: nowrap;
+    }
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+    }
+    .rodapePrincipal-contatoForm{
+        width: 100%;
+    }
+    .rodapePrincipal-patrocinadores-list{
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    .rodapePrincipal-contatoForm-fieldset{
+        justify-content: center;
+    }
+    .headerPrincipal-nav-link-app{
+        order: -1;
+    }
+    
+}
