@@ -1,0 +1,53 @@
+las imagenes se identifican dependiendo de su formato 
+
+PNG 
+*Poco compacto 
+*Matiene la calidad de la imagen
+*Tamañano elevado 26.6 KB
+
+JPG
+*Muy compacto 
+*Calidad de img es inferior 
+*Tamañano es leve 9.29 KB
+
+GIF
+*Calidad de img baja
+*Uso limitado
+*Tamañano dependen de la calidad de la img 199 KB
+
+SVG
+*Img vectoriales en dos dimensiones 
+*Mas leve
+Tamañano Variable 4.26 KB
+
+Los formatos mas usados para el desarrollo Son PNG Y SVG
+PNG: acercamiento se ve muy mal, los de detalles son mas notorios 
+SVG: acercamiento es mejor visto, perdemos los colores tener ene cuenta que no entondas pero en algunas si los detalles se pierden 
+
+¿Cuando usamos SVG?
+*Logotipos 
+*íconos
+*Ilustración mas sencillas.
+
+¿Cuando usamos PNG?
+*imagenes con mas detalles
+*los colores resalten
+
+Mobile first
+Cocepto que la versión de móvile de una pagina web debe ser la primera.
+
+Ventajas 
+*Se concentra en lo ensencial
+*Informacionde más facil acceso
+*Máximo redimiento 
+*Reduce el código fuente 
+*Uso de HTML5
+
+LA PROPIEDAD BOX-SIZING
+La propiedad box-sizing puede ser usada para ajustar el siguiente comportamiento:
+
+content-box es el comportamiento CSS por defecto para el tamaño de la caja (box-sizing). Si se define el ancho de un elemento en 100 pixeles, 
+la caja del contenido del elemento tendrá 100 pixeles de ancho, y el ancho de cualquier borde o relleno ser añadirá al ancho final desplegado.
+border-box le dice al navegador tomar en cuenta para cualquier valor que se especifique de borde o de relleno para el ancho o alto de un elemento.
+Es decir, si se define un elemento con un ancho de 100 pixeles. Esos 100 pixeles incluíran cualquier borde o relleno que se añadan, y la caja de 
+contenido se encogerá para absorber ese ancho extra. Esto típicamente hace mucho más fácil dimensionar elementos.

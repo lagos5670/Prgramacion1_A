@@ -1,5 +1,10 @@
+:root{
+    --color-letras: #FFFFFF;
+    --borde-boton:#103D4A;
+
+}
 .head {
-    color: #FFFFFF;
+    color: var(--color-letras);
 
     width: 100%;
 
@@ -12,7 +17,7 @@
     padding-top: .75rem;
     padding-bottom: .75rem;
 
-    border-bottom: 1px solid #103D4A;
+    border-bottom: 1px solid var(--borde-boton);
 
     position: absolute;
 }
@@ -31,6 +36,6 @@
     display: inline-block;
 
     margin-right: .7rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: .7rem;
     margin-left: .7rem;
 }

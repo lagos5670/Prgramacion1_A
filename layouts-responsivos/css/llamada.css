@@ -1,12 +1,17 @@
+:root{
+    --color-letras:#FFFFFF;
+    --background-color-Fondo: #00161C;
+    --monserrat: 'Montserrat', sans-serif;
+}
 .llamada  {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    color: #FFFFFF;
+    color: var(--color-letras);
     text-align: center;
     
-    background-color: #00161C;
+    background-color: var(--background-color-Fondo);
 
     /*el rem es una medida relativa pero de mayor nivel de gerarquia*/
     padding-top: 12.25rem;
@@ -14,7 +19,7 @@
 }
 
 .llamada__titulo {
-    font-family: 'Montserrat', serif;
+    font-family:var(--monserrat);
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
