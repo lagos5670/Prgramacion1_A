@@ -1,0 +1,55 @@
+/*selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3f5fc;
+}
+.texto{
+    position: absolute;
+    width: 45%;
+    height: 30%;
+    left: 12%;
+    top:15%;
+    border-radius: 6px;
+    text-align: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    background-color: #f3f5fc;
+}
+.texto::placeholder{
+    color: #0A3871;
+}
+.texto:focus, .texto:active{
+    outline: none;
+}
+.terminos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top:50%;/*para encontrar el top correcto lo que hago 
+    es sumar el top de la class texto mas height de esta misma clase  */
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+
+
+
