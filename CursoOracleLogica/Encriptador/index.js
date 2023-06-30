@@ -1,3 +1,25 @@
+function encriptar(){
+    let palabra  = document.getElementById("texto").value;/* getElementById nos ayuda retornar los elementos obtenidos en el sitio web ya se por un texarea o imput y el valor lo obtenemos de value */
+    let tituloMensaje= document.getElementById("titulo-mensaje")
+    let parrafo = document.getElementById("parrafo");
+    let muñeco = document.getElementById("candado");
+    let textoCifrado = palabra
+        .replace(/e/gi, "enter")
+        .replace(/i/gi, "imes")
+        .replace(/a/gi, "ai")
+        .replace(/o/gi, "ober")
+        .replace(/u/gi, "ufat");
+    if(palabra.length != 0){
+        palabra = textoCifrado;
+        tituloMensaje.textContent="Texto Encriptado con Éxito";
+        parrafo.textContent = "";
+        muñeco.src="img/verificado.png";
+    }else{
+        muñeco.src="img/ingresar.png";
+        alert("Deves Ingresar algun texto");
+    }
+}
+/*otra manera de hacer el reemplazamineto*/
 /*var contador = 0;
 var palabra  = prompt("Ingresar el texto");
 var contador ;

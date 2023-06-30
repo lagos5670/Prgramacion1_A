@@ -11,7 +11,7 @@
 }
 .texto{
     position: absolute;
-    width: 50%;
+    width: 42%;
     height: 30%;
     left: 12%;
     top:15%;
@@ -103,6 +103,109 @@
     width: 24.5%;
     padding: 1.8%;
 }
+.encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 70%;/*video lo maeja con 90%*/
+    left: 60%;/*este datos no sale de la clase texto donde tenemso encuneta el width y left donde eso nos da la suma de 54% por lo tanto a nuestro nuevo left le daremos un valor de 60% que tome essa posicion y tenga su debido espacio*/
+    top: 5%;
+    background: #fff;
+    box-shadow: 0px 24px 32px -8px rgb(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+.mensaje-ecnriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+}
+.mensaje-ecnriptado h2{
+    width: 60%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343a40;
+}
+.mensaje-ecnriptado p{
+    width: 80%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+.encriptado img{
+    position: absolute;
+    width: 60%;
+    height: 45%;
+    top:15%;
+}
 
-
+/*reponsive design*/
+@media (max-width: 57.5em){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .encriptar{
+        width: 100%;
+    }
+    .texto{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+    .terminos{
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+    .terminos p{
+        font-size: 16px;
+    }
+    .botones{
+        width:80%;
+        left: 10%;
+        top: 70%;
+    }
+    .btn-encriptar, .btn-desencriptar{
+        width: 48%;
+        border-radius: 16px;
+    }
+    .btn-encriptar:hover, .btn-desencriptar:hover{
+        margin: 0.3%;
+        width:47.5%;
+        padding: 1.8%;
+    }
+    .encriptado{
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+    .mensaje-ecnriptado{
+        width: 100%;
+        top: 5%;
+    }
+    .encriptado img{
+        top: 0;
+        display: none;
+        visibility: hidden;/*no se visualiza la imagen*/
+    }
+    
+}
 
