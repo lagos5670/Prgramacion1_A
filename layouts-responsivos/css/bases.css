@@ -43,3 +43,9 @@ body{
     border: 1px solid var(--boton-rojo);/*asi llamamos a una variable en css var("nombre de la variable")*/
     border-radius: 5px;
 }
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+}
