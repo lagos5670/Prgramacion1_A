@@ -1,0 +1,54 @@
+CONCEPTOS BASICOS
+
+*Que es una arquitectura CSS.
+Es una metodologia que se enfoca en la estructira de un proyecto 
+
+*Objetivos de una arquitectura CSS.
+Es la organización del código y carpetas junto a una metodologia de clases para que el trabajo en qeuipo esé estandarizado.
+
+PREDECIBLE:Sus reglas hacen lo que se espera. Añadir o actualizar una regla no tiene repercusiones inesperadas.
+REUTILIZABLE: Las reglas son abstractas y estan desacopladas. Así se podran crear nuevos componentes de forma más rápida y sencilla 
+MANTENIBLE: Es la capacidad de realizar cambios en las CSS sin necesidad de tener que refactorizar el código existente.
+ESCALABLE: Significa que a medida que las CSS anumentan de tamaño, siguen siendo fáciles de mantener.
+
+Tipos de metodologías (mas populares)
+*OOCSS
+*SMACSS
+*BEM -->Trabajamos para manejar clases 
+*ITCSS
+*ACSS(Atomic Design)--> Estructura de nuestro proyecto
+
+METODOLOGIA BEM
+BEM(Bloque, Elemento, Modificador)
+Es una convencion de nomeclatura popular para las clases en HTML y CSS.
+
+La idea detras de estos es dividir la interfaz de ususario en bloques independinetes.
+Esto hace que el desarrollado de la intefaz sea facil y rapido, incluso con una interfaz de usuario compleja, permite crear componentes de intefaz extendibles y reutilizables
+
+BLOQUE: Un componente de pagina funcionalmente que se puede reutilizar.En HTML, los bloques están respresentados por el class artributo
+Este bloque debe considerarse como un padre
+ejemplo 
+<div class="card"></div>
+
+ELEMENTO: Una parte de un bloque que no se puede usar por separado 
+ejemplo
+<from class="contacto">
+    <input class="contacto__input">
+    <button class="contacto__button">Enviar</button>
+</from>
+
+MODIFICADORES: Una entidad que define la aparencia, el estado o el comportamineto de un bloque o Elemento
+ejemplo
+<div class="card">
+    <a class="card__link"  href="">Nombre</a>
+    <a class="card__link--resaltar" href="" >Precio</a>
+</div>
+
+Atomic Design 
+El Atomic Design o diseño aromico es una metodologia para crear sistemas de diseño 
+Hay 5 niveles distintos en el diseño atómico:
+*Átomo --> Etiquetas
+*Moléculas -->uninedo atomos
+*Organismos -->grupos de moleculas
+*Template -->grupos de organismos
+*Páginas -->son instancias de plantillas 
